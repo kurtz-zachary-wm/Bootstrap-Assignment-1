@@ -4,8 +4,8 @@
 <head>
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
     <title>Ristorante Con Fusion</title>
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css" rel="stylesheet">
@@ -31,11 +31,8 @@
                 <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign">
                     </span>About</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle
-                            ="dropdown"
-                       role="button" aria-haspopup="true" aria-expanded
-                               ="false">
-                        Menu <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cutlery">Menu</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Appetizers</a></li>
                         <li><a href="#">Main Courses</a></li>
@@ -47,8 +44,16 @@
                         <li><a href="#">Weekend Brunch</a></li>
                     </ul>
                 </li>
-                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="contactUs.html"><span class="glyphicon glyphicon-envelope">Contact</span></a></li>
             </ul>
+            <form style="text-align: right">
+                <div style="padding: 12px;">
+                <input placeholder="Email" id="Email">
+                <input placeholder="Password" id="password">
+                <input type="checkbox"> <span style="color: white;">Remember me</span>
+                <input type="submit" value="Sign in">
+                </div>
+            </form>
         </div>
     </div>
 </nav>
@@ -68,73 +73,119 @@
                 <p style="padding:20px;"></p>
                 <img src="img/logo.png" class="img-responsive">
             </div>
+            <div class="col-xs-12 col-sm-2">
+                <p style="padding:30px;"></p>
+                <a id="reserve-link" type="button" class="btn btn-block btn-warning" href="#reserve">Reserve Table</a>
+            </div>
         </div>
     </div>
 </header>
-
-<div class="container row-content">
-    <div class="row row-content">
-        <div class=>
-            <p style="padding:20px;"></p>
-            <h3 align=center>Our Lipsmacking Culinary Creations</h3>
-        </div>
-        <div>
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object img-thumbnail"
-                             src="img/uthappizza.png" alt="Uthappizza">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h2 class="media-heading">Uthappizza</h2>
-                    <p>A unique combination of Indian Uthappam (pancake) and
-                        Italian pizza, topped with Cerignola olives, ripe vine
-                        cherry tomatoes, Vidalia onion, Guntur chillies and
-                        Buffalo Paneer.</p>
-                    <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
-                </div>
+<div class="row row-content">
+    <div class="col-xs-6 col-sm-9">
+        <div class="media">
+            <div class="media-left media-middle">
+                <a href="#">
+                    <img class="media-object img-thumbnail" src="img/Pizza.jpg" alt="Uthappizza">
+                </a>
             </div>
-
+            <div class="media-body">
+                <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                <p>A unique combination of Indian Uthappam (pancake) and
+                    Italian pizza, topped with Cerignola olives, ripe vine
+                    cherry tomatoes, Vidalia onion, Guntur chillies and
+                    Buffalo Paneer.</p>
+                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+            </div>
         </div>
     </div>
+    <div class="col-xs-6 col-sm-3">
+        <p style="padding:20px;"></p>
+        <h3 align=center>Our Lipsmacking Culinary Creations</h3>
+    </div>
+</div>
 
 
     <div class="row row-content">
-        <div>
-            <p style="padding:20px;"></p>
-            <h3 align=center>This Month's Promotions</h3>
+        <div class="col-xs-12 col-sm-3">
+            <p style="padding: 20px;"></p>
+            <h3 style="text-align: center;">This Month's Promotion</h3>
         </div>
         <div>
-            <h2>Weekend Grand Buffet</h2>
+            <h2 class="media-heading">Weekend Grand Buffet<span class="label label-danger">New</span></h2>
             <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>        </div>
     </div>
 
     <div class="row row-content">
-        <div>
-            <p style="padding:20px;"></p>
-            <h3 align=center>Meet our Culinary Specialists</h3>
-        </div>
-        <div>
+        <div class="col-xs-6 col-sm-9">
             <div class="media">
                 <div class="media-left media-middle">
                     <a href="#">
-                        <img class="media-object img-thumbnail"
-                             src="img/alberto.png" alt="Alberto Somayya">
+                        <img class="media-object img-thumbnail" src="img/thomas.jpg" alt="chef">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h2 class="media-heading">Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p>Award winning three-star Michelin chef with wide
+                    <h2 class="media-heading">
+                        Thomas "The Triggered" Train
+                    </h2>
+                    <p>
+                        Award winning three-star Michelin chef with wide
                         International experience having worked closely with
                         whos-who in the culinary world, he specializes in
                         creating mouthwatering Indo-Italian fusion experiences.
                     </p>
-                    <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    <p>
+                        <a class="btn btn-primary btn-xs" href="#">
+                            More &raquo;
+                        </a>
+                    </p>
+                    </div>
                 </div>
             </div>
+        <div class="col-xs-6 col-sm-3">
+            <p style="padding:20px;">
+            </p>
+            <h3 align="center">
+                Meet our Culinary Specialist
+            </h3>
+            </div>
+        </div>
+
+    <div class="row row-content">
+    <div class="col-xs-12 col-sm-3">
+        <p style="padding: 20px;"></p>
+        <h3 style="text-align: center;">Reserve A Table</h3>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <a name="Reserve"></a>
+        <form class="form-inline" role="form">
+
+
+            <div class="form-group">
+                <label class="control-label" for="numS">Number of Guests</label>
+                <input type="radio" value="1" id="numS"> 1 <input type="radio" value="2"> 2 <input type="radio" value="3"> 3 <input type="radio" value="4"> 4 <input type="radio" value="5"> 5 <input type="radio" value="6"> 6
+            </div>
+            <br>
+            <div class="form-group has-feedback">
+                <label class="control-label" for="datentime">Date & Time</label>
+                <input type="date" class="form-control" id="datentime" aria-describedby="inputSuccess4Status">
+                <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+                <input type="time" class="form-control" id="time" aria-describedby="inputSuccess5Status">
+                <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" style="margin-left: 20px;">Reserve</button>
+            </div>
+        </form>
+        <br>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!</strong> Please <a href="contactUs.html">call</a> us to reserve for more than six guests.
         </div>
     </div>
 </div>
