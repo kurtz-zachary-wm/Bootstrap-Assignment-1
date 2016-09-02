@@ -46,19 +46,46 @@
                 </li>
                 <li><a href="contactUs.html"><span class="glyphicon glyphicon-envelope">Contact</span></a></li>
             </ul>
-            <form style="text-align: right">
-                <div style="padding: 12px;">
-                <input placeholder="Email" id="Email">
-                <input placeholder="Password" id="password">
-                <input type="checkbox"> <span style="color: white;">Remember me</span>
-                <input class="btn btn-info" type="submit" value="Sign in">
-                </div>
-            </form>
-        </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="glyphicon glyphicon-log-in">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    </div>
     </div>
 </nav>
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times
+                    ;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+                <form style="text-align: right">
+                    <div style="padding: 12px;">
+                        <input placeholder="Email" id="Email">
+                        <input placeholder="Password" id="password">
+                        <input type="checkbox"> <span style="color: black;">Remember me</span>
+                        <input class="btn btn-info" type="submit" value="Sign in">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-default btn-sm"
+                        data-dismiss="modal">Cancel</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <header class="jumbotron">
+
 
     <!-- Main component for a primary marketing message or call to action -->
 
@@ -75,7 +102,9 @@
             </div>
             <div class="col-xs-12 col-sm-2">
                 <p style="padding:30px;"></p>
-                <a id="reserve-link" type="button" class="btn btn-block btn-warning" href="#reserve">Reserve Table</a>
+                <a id="reserve-link" type="button" class="btn btn-block btn-warning"
+                   data-toggle="tooltip" title="Or Call us at +852 12345678" data-placement="bottom"
+                   href="#reserve">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -243,5 +272,10 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 </body>
 </html>
