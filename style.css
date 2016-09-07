@@ -51,3 +51,8 @@ address {
 .navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
     color:#000000;
 }
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
