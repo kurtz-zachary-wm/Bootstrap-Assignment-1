@@ -1,0 +1,25 @@
+{
+  "name": "Bootstrap-Assignments",
+  "homepage": "https://github.com/kurtz-zachary-wm/Bootstrap-Assignments",
+  "authors": [
+    "Zachary Kurtz"
+  ],
+  "description": "Website for an awesome resturant",
+  "main": "index.html",
+  "keywords": [
+    "Bootstrap",
+    "Assignments"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
